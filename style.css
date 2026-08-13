@@ -237,3 +237,11 @@ body {
     color: #64748b;
     line-height: 1.4;
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+    background: #fff;
+    border-top: 1px solid #e2e8f0;
+}
