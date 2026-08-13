@@ -43,5 +43,5 @@ QuickCalc/
 ├── index.html       # HTML Markup
 ├── style.css        # Custom CSS Styling
 ├── script.js       # Core JS Functions & Event Logic
-├── screenshot.png   # 👈 (Add your app screenshot image here)
+├── screenshot.png   # Add  app screenshot image 
 └── README.md        # Documentation
