@@ -33,3 +33,8 @@ function addToHistory(expression, result) {
     li.textContent = `${expression} = ${result}`;
     historyList.prepend(li); // Add new history at top
 }
+
+// Calculate logic
+goBtn.addEventListener("click", () => {
+    const valA = aE1.value.trim();
+    const valB = bE1.value.trim();
