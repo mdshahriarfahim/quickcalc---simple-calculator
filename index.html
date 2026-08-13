@@ -39,7 +39,7 @@
                     <input id="b" type="number" placeholder="Second number" autocomplete="off">
                 </div>
             </div>
-            
+
             <div class="action-btns">
                 <button id="go" class="btn-primary"><i class="fa-solid fa-bolt"></i> Calculate</button>
                 <button id="clear" class="btn-secondary"><i class="fa-solid fa-rotate-left"></i> Reset</button>
@@ -49,6 +49,15 @@
                 <span class="out-label">Result:</span>
                 <span id="result-val">0</span>
             </div>
+
+        <!-- History Section -->
+            <div class="history-container">
+                <h4><i class="fa-solid fa-clock-rotate-left"></i> Recent Calculations</h4>
+                <ul id="historyList" class="history-list">
+                    <li class="empty-msg">No calculations yet</li>
+                </ul>
+            </div>
+        </section>
 
 </main>
 
