@@ -161,3 +161,39 @@ body {
     color: #64748b;
     font-weight: 500;
 }
+.history-container {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.history-container h4 {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.history-list {
+    list-style: none;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.history-list li {
+    font-size: 14px;
+    padding: 6px 0;
+    color: #334155;
+    border-bottom: 1px dashed #f1f5f9;
+}
+
+.history-list .empty-msg {
+    color: #94a3b8;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+}
