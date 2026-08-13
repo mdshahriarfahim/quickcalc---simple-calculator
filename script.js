@@ -11,3 +11,14 @@ function calculate(a, b, op) {
     if (op === "/") return div(a, b);
     return "Invalid";
 }
+
+// DOM Elements
+const aE1 = document.getElementById("a");
+const bE1 = document.getElementById("b");
+const op = document.getElementById("op");
+const resultVal = document.getElementById("result-val");
+const goBtn = document.getElementById("go");
+const clearBtn = document.getElementById("clear");
+const historyList = document.getElementById("historyList");
+
+let hasHistory = false;
