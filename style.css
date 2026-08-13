@@ -11,7 +11,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
     color: #fff;
@@ -65,4 +64,41 @@ body {
     opacity: 0.9;
     margin-top: 10px;
     font-size: 16px;
+}
+.main-container {
+    flex: 1;
+}
+
+.card {
+    max-width: 480px;
+    margin: -50px auto 40px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f1f5f9;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 70px 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.row input, .row select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #f8fafc;
+}
+
+.row input:focus, .row select:focus {
+    border-color: #4f46e5;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
