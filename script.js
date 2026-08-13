@@ -22,3 +22,14 @@ const clearBtn = document.getElementById("clear");
 const historyList = document.getElementById("historyList");
 
 let hasHistory = false;
+
+// Add to history list
+function addToHistory(expression, result) {
+    if (!hasHistory) {
+        historyList.innerHTML = ""; // Remove empty message
+        hasHistory = true;
+    }
+    const li = document.createElement("li");
+    li.textContent = `${expression} = ${result}`;
+    historyList.prepend(li); // Add new history at top
+}
