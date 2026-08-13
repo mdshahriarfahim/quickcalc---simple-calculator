@@ -141,3 +141,23 @@ body {
 .btn-secondary:hover {
     background: #cbd5e1;
 }
+.out {
+    margin-top: 20px;
+    padding: 16px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.out-label {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+}
