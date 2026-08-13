@@ -38,3 +38,21 @@ function addToHistory(expression, result) {
 goBtn.addEventListener("click", () => {
     const valA = aE1.value.trim();
     const valB = bE1.value.trim();
+
+    // Input Validation
+    if (valA === "" || valB === "") {
+        resultVal.textContent = "Please enter both numbers";
+        resultVal.style.color = "#ef4444";
+        return;
+    }
+
+    const a = Number(valA);
+    const b = Number(valB);
+
+    if (Number.isNaN(a) || Number.isNaN(b)) {
+        resultVal.textContent = "Invalid Numbers";
+        resultVal.style.color = "#ef4444";
+        return;
+    }
+
+    const result = calculate(a, b, op.value);
