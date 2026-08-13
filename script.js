@@ -56,3 +56,28 @@ goBtn.addEventListener("click", () => {
     }
 
     const result = calculate(a, b, op.value);
+
+    // Format operator for display
+    let opSymbol = op.value;
+    if (opSymbol === "*") opSymbol = "×";
+    if (opSymbol === "/") opSymbol = "÷";
+
+    resultVal.style.color = "#1e293b";
+    resultVal.textContent = result;
+
+    // Save to history if valid calculation
+    if (typeof result === "number") {
+        addToHistory(`${a} ${opSymbol} ${b}`, result);
+    }
+});
+
+// Reset logic
+clearBtn.addEventListener("click", () => {
+    aE1.value = "";
+    bE1.value = "";
+    op.value = "+";
+    resultVal.textContent = "0";
+    resultVal.style.color = "#1e293b";
+});
+
+console.log("QuickCalc loaded successfully");
